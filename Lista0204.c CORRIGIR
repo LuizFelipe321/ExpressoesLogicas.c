@@ -1,0 +1,38 @@
+/*Escreva um programa que informe a categoria de um jogador de futebol, considerando
+sua idade: infantil (até 13 anos), juvenil (até 17 anos) ou sênior (acima de 17 anos). A idade deve
+ser recebida do usuário*/
+#include <stdio.h>
+int main(){
+
+    int categoria, idade;
+
+    printf(" Escreva a categoria do jogador considerando que seja: \n 1- Para categoria infantil(ate 13 anos) \n 2- juvenil(ate 17 anos) \n 3- senior( acima de 17 anos) \n");
+    scanf("%d", &categoria);
+
+    switch (categoria){
+ case 1:
+   printf("Qual a idade do jogador de futebol:");
+   scanf("%d", &idade);
+   if (idade <= 13 && idade >= 7);
+    printf("\nCategoria do jogador de futebol eh INFANTIL");
+    break;
+ case 2:
+   printf("Qual a idade do jogador de futebol:");
+   scanf("%d", &idade);
+   if(idade > 13 && idade <= 17){
+    printf("\nCategoria do jogador de futebol eh JUVENIL");
+    break;
+   }
+ case 3:
+   printf("Qual a idade do jogador de futebol:");
+   scanf("%d", &idade);
+   if (idade > 17){
+    printf("\nCategoria do jogador de futebol eh SENIOR");
+    break;
+   }
+ default:
+    printf("Categoria invalida!");
+    }
+    return 0;
+
+    }
